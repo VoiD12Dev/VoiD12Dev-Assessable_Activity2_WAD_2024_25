@@ -1,0 +1,15 @@
+- The security group must first be created. The HTTP, HTTPS and SSH inbound rules are opened.
+- Launch the ubuntu instance (AMI). Select ‘vockey’ as the par key. When creating the instance, select the previously created security group as the security group.
+- An elastic IP is created to associate it with the EC2. It is important to associate it because AWS charges for non-associated elastic IPs.
+- Access to ka terminate using the command o ssh -i labsuser.pem ubuntu@ec2-44-205-245-141.compute-1.amazonaws.com. The .pem can be downloaded from the labs home page.
+- The first thing to do is to update the server.
+- Install apache2
+- Install nodejs npm
+- Install pm2
+- Clone the repository with git clone.
+- Go into the folder, and once in it edit package.json to add the homepage.
+- We do npm install.
+- Execute the command indicated in the pm2 practice.
+- Activate the proxy module and proxy_http.
+- Edit the configuration file, with the serverName and adding the proxy and proxypass. Save the edited file.
+- Restart the apache2 service.
